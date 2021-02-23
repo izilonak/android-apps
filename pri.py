@@ -7,7 +7,6 @@ from threading import Thread
 from plyer import sms
 import threading
 import time
-import os
 
 class boxapp(App):
     global email
@@ -71,6 +70,5 @@ class boxapp(App):
         return bl
 
 if __name__ == '__main__':
-    os.environ["KIVY_NO_CONSOLELOG"] = "True"
     __version__ = '0.0.1'
     boxapp().run()
